@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/commands.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="../img/" type="image/x-icon">
+    <title>Eternity Client</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand text-info">Eternity Client</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"><span
+                    class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown"></li>
+                </ul>
+                <!--<li class="navbar-nav nav-item"><a href="" class="btn btn-outline-info">Login</a></li>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section style="margin-top: 9%;">
+            <div class="row">
+                <div class="col-sm-6 my-1">
+                    <h2 class="fw-bold">Eternity Commands</h2>
+                    <p class="command-descreption">Find all Eternity Client commands and information you need fast and easy</p>
+                    <p class="command-descreption">If you search for a feature you have to put a "_" after each word</p>
+                </div>
+                <div class="col-sm-6 my-1">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4050940490843957" crossorigin="anonymous"></script>
+                    <!-- cookiener -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:100%;height:90px"
+                         data-ad-client="ca-pub-4050940490843957"
+                         data-ad-slot="6770580457"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <div class="mt-4"></div>
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <div class="card p-3">
+                    <h5>Select Commands Category</h5>
+                    <hr />
+                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Features</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Security Features</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; General Features</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Extra Features</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Premium Features</button>
+                    
+                </div>
+            </div>
+            <div class="col-md-8 my-2">
+                <input type="text" class="w-100 search-box" oninput="search(this.value)" placeholder="Search for commands" />
+                
+                    
+                        <div class="mt-4"></div>
+                    
+                    <div class="commands-section" id="Category0">
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="secure_cookie">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsecure_cookie">
+                                             Secure Cookie&nbsp; <span class="command-descreption">- secure your cookie</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fsecure_cookie" class="accordion-collapse collapse" data-bs-parent="#secure_cookie">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                Just press the checkbox in the menu with the text secure_cookie<br>
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="secure_folder">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsecure_folder">
+                                             Secure Folder&nbsp; <span class="command-descreption">- secure your roblox folder</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fsecure_folder" class="accordion-collapse collapse" data-bs-parent="#secure_folder">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                Just press the checkbox in the menu with the text Secure Roblox Folder<br>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="open_source">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fopen_source">
+                                             Open Source&nbsp; <span class="command-descreption">- open_source project</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fopen_source" class="accordion-collapse collapse" data-bs-parent="#open_source">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                It is an open_source project created by the company Eternity.
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    </div>
+                
+                    
+                    <div class="commands-section" id="Category1">
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="fps_booster">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ffps_booster">
+                                             FPS Booster&nbsp; <span class="command-descreption">- boost your FPS</span>
+                                        </button>
+                                    </h2>
+                                    <div id="ffps_booster" class="accordion-collapse collapse" data-bs-parent="#fps_booster">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                Just press the checkbox in the menu with the text fps_booster   
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="automatic_graphic">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fautomatic_graphic">
+                                            Automatic Graphic&nbsp; <span class="command-descreption">- adjusts the graphics to the performance of your pc</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fautomatic_graphic" class="accordion-collapse collapse" data-bs-parent="#automatic_graphic">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                Just press the checkbox in the menu with the text automatic_graphic
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="better_latency">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fbetter_latency">
+                                             Better Latency&nbsp; <span class="command-descreption">- automatically get a better ping</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fbetter_latency" class="accordion-collapse collapse" data-bs-parent="#better_latency">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                Just press the checkbox in the menu with the text better_latency
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                
+                    
+                    <div class="commands-section" id="Category2">
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="auto_accept_friends">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fauto_accept_friends">
+                                             Auto Accept Friends&nbsp; <span class="command-descreption">- get more friends with auto accept </span>
+                                        </button>
+                                    </h2>
+                                    <div id="fauto_accept_friends" class="accordion-collapse collapse" data-bs-parent="#auto_accept_friends">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                Just press the checkbox in the menu with the text auto_accept_friends
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                
+                    
+                    <div class="commands-section" id="Category3">
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="create_shop">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fcreate_shop">
+                                            <span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; Create Shop&nbsp; <span class="command-descreption">- create your own shop</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fcreate_shop" class="accordion-collapse collapse" data-bs-parent="#create_shop">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                Just press the button in the menu with the text Create Shop
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="create_game">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fcreate_game">
+                                            <span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; Create Game&nbsp; <span class="command-descreption">- create your own roblox game</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fcreate_game" class="accordion-collapse collapse" data-bs-parent="#create_game">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    Soon
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+        <!-- footer -->
+
+        <div class="footer-clean bg-dark">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Quick access</h3>
+                            <ul>
+                                <li><a href="#Features">Features</a></li>
+                                <li><a href="#Statics">Statics</a></li>
+                                <li><a href="#FAQ">Ask me</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Commands</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Links</h3>
+                            <ul>
+                                <li><a href="#">Support server</a></li>
+                                <li><a href="#">Invite Client</a></li>
+                                <li><a href="#">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-footer font-small text-light mt-5">
+                <div class="footer-copyright text-center">Made by
+                    <a href="https://discord.gg/XzjRYC45z2">Eternity</a>
+                    © 2022 Copyright
+                  </div>
+                </div>
+            </footer>
+        </div>
+    
+    <input id="commands" value="[{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Security Features&#34;,&#34;commands&#34;:[&#34;secure_cookie&#34;,&#34;secure_folder&#34;,&#34;open_source&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-globe-europe ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; General Features&#34;,&#34;commands&#34;:[&#34;fps_booster&#34;,&#34;automatic_graphic&#34;,&#34;better_latency&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Leveling Commands&#34;,&#34;commands&#34;:[&#34;auto_accept_friends&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Premium Features&#34;,&#34;commands&#34;:[&#34;create_shop&#34;,&#34;create_game&#34;]}]" hidden />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/fontawesome/all.min.js"></script>
+    <script src="/js/animation.js"></script>
+    <script>
+        function active(elm){
+            document.getElementById("CategoryBtnAll").classList.remove("active");
+            
+                document.getElementById("CategoryBtn0").classList.remove("active");
+                document.getElementById("Category0").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn1").classList.remove("active");
+                document.getElementById("Category1").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn2").classList.remove("active");
+                document.getElementById("Category2").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn3").classList.remove("active");
+                document.getElementById("Category3").setAttribute("hidden", "");
+            
+            elm.classList.add("active");
+            if(elm.id.replace("CategoryBtn", "") == "All"){
+                
+                    document.getElementById("Category0").removeAttribute("hidden");
+                
+                    document.getElementById("Category1").removeAttribute("hidden");
+                
+                    document.getElementById("Category2").removeAttribute("hidden");
+                
+                    document.getElementById("Category3").removeAttribute("hidden");
+                
+            }else{
+                document.getElementById("Category" + elm.id.replace("CategoryBtn", "")).removeAttribute("hidden");
+            }
+        }
+        document.getElementById("CategoryBtnAll").click();
+        function search(arg){
+            let commands = JSON.parse(document.getElementById("commands").value);
+            let cmds = [];
+            commands.forEach(category => {
+                category.commands.forEach(command => {
+                    cmds.push(command);
+                })
+            })
+            let existedCmds = cmds.filter(obj => obj.includes(arg.toLowerCase()));
+            cmds.forEach(cmd => {
+                document.getElementById(cmd).setAttribute("hidden", "");
+            })
+            existedCmds.forEach(cmd => {
+                document.getElementById(cmd).removeAttribute("hidden");
+            })
+        }
+    </script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
